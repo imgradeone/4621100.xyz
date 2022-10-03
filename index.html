@@ -1,8 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh_CN">
 <head>
- <meta http-equiv="refresh" content="0;url=https://live.bilibili.com/4621100">
+    <link rel="stylesheet" href="https://unpkg.com/nexmoe.css" />
+    <link rel="stylesheet" href="override.css" />
+    <title>4621100 | 轻松 快乐 趣生活</title>
+    <style>
+			article {
+				padding: 2rem;
+			}
+			articlegrid {
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 2rem;
+				display: grid;
+			}
+			@media (max-width: 700px) {
+				articlegrid {
+					grid-template-columns: 1fr;
+				}
+			}
+    </style>
 </head>
 <body>
+    <nav>
+        <a><h1>4621100</h1></a>
+        <ul>
+            <li><a checked="">主页</a></li>
+            <li>
+                <a href="#">观看</a>
+                <ul>
+                    <li>
+                        <a href="https://live.bilibili.com/4621100" target="_blank">bilibili</a>
+                    </li>
+                    <li>
+                        <a href="https://twitch.tv/imgradeonemoe" target="_blank">Twitch</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://carrottv.com.cn" target="_blank">CarrotTV</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>
+            轻松 快乐 趣生活
+        </h2>
+        <p>CarrotTV 旗下 | imgradeone 的个人娱乐向直播间</p>
+        <p>
+            <a
+                href="https://live.bilibili.com/4621100"
+                target="_blank"
+            >
+                <button>立即前往 B 站直播间</button></a
+            >
+            <a
+                href="https://twitch.tv/imgradeonemoe"
+                target="_blank"
+            >
+                <button>Twitch 直播</button></a
+            >
+
+        </p>
+        <br />
+    </header>
+
+    <main>
+        <section>
+            <articlegrid>
+                <article>
+                    <h2>娱乐向直播间</h2>
+                    <p>
+                        游戏 / 电台 / 互动，可以共同享受的新精彩
+                    </p>
+                </article>
+                <article>
+                    <h2>只做我自己</h2>
+                    <p>
+                        随性不妄言，不跟风，不随大流，只为自己而来
+                    </p>
+                </article>
+                <article>
+                    <h2>CarrotTV 旗下</h2>
+                    <p>CarrotTV 与 4621100 共同打造的创意化直播频道体验</p>
+                </article>
+            </articlegrid>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            ©2022 CarrotTV, 4621100 & imgradeone | Powered by 
+            <a href="https://nexmoe.github.io/nexmoe.css/" target="_blank">Nexmoe.css</a>
+        </p>
+    </footer>
 </body>
 </html>
