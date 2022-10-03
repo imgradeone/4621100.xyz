@@ -1,13 +1,13 @@
 :root {
-	--color-primary: rgb(250, 64, 139) !important;
-	--color-link: #fa4694 !important;
-    --color-hover: rgba(250, 64, 139, 0.15) !important;
+	--color-primary: #882CE7 !important;
+	--color-link: #882CE7 !important;
+    --color-hover: rgba(136, 44, 231, 0.15) !important;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-primary: #fa71b4 !important;
-		--color-link: #fa71b4 !important;
-		--color-hover: rgba(250, 113, 180, 0.15) !important;
+		--color-primary: #B06FF3 !important;
+		--color-link: #B06FF3 !important;
+		--color-hover: rgba(176, 111, 243, 0.15) !important;
 	}
 }
