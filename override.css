@@ -2,6 +2,18 @@
 	--color-primary: #882CE7 !important;
 	--color-link: #882CE7 !important;
     --color-hover: rgba(136, 44, 231, 0.15) !important;
+
+	--webpage-font: Inter, "MiSans Normal", sans-serif;
+	--webpage-font-variable: InterVariable, "MiSans Normal", sans-serif;
+	font-family: var(--webpage-font);
+	font-feature-settings: 'liga', 'calt', 'ss01', 'cv05', 'cv06', 'cv11', 'cv13';
+}
+
+@supports (font-variation-settings: normal) {
+    :root { 
+		font-family: var(--webpage-font-variable);
+		/* font-feature-settings: 'liga' 1, 'calt' 1, 'ss01' 1, 'cv05' 1, 'cv06' 1; */
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,4 +22,16 @@
 		--color-link: #B06FF3 !important;
 		--color-hover: rgba(176, 111, 243, 0.15) !important;
 	}
+}
+
+button {
+	font-family: var(--webpage-font) !important;
+}
+
+a, button, nav, h1, h2, h3, h4, h5, h6 {
+	font-feature-settings: 'liga', 'calt', 'ss01', 'cv05', 'cv06', 'cv11', 'cv13', 'zero';
+}
+
+nav a[target="_blank"]::after, footer a[target="_blank"]::after {
+    content: " ↗";
 }
